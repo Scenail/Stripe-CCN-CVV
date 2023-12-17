@@ -42,7 +42,7 @@ if(isset($_GET['sec'])){
 
 }
 $sk= trim($get_sk);
-$sk = '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';
+$sk = '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';
 $lista = $_GET['lista'];
     $cc = multiexplode(array(":", "|", ""), $lista)[0];
     $mes = multiexplode(array(":", "|", ""), $lista)[1];
