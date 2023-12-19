@@ -42,7 +42,7 @@ if(isset($_GET['sec'])){
 
 }
 $sk= trim($get_sk);
-$sk = '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';
+$sk = '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';
 $lista = $_GET['lista'];
     $cc = multiexplode(array(":", "|", ""), $lista)[0];
     $mes = multiexplode(array(":", "|", ""), $lista)[1];
@@ -99,7 +99,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);  
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);  
 curl_setopt($ch, CURLOPT_USERPWD, $sk. ':' . '');  
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'amount='.$chr.'&currency=eur&payment_method_types[]=card&description=MotuSamusa Donation&payment_method='.$tok1.'&confirm=true&off_session=true');  
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'amount='.$chr.'&currency=gbp&payment_method_types[]=card&description=MotuSamusa Donation&payment_method='.$tok1.'&confirm=true&off_session=true');  
 $result2 = curl_exec($ch);  
 $tok2 = Getstr($result2,'"id": "','"');  
 $receipturl = trim(strip_tags(getStr($result2,'"receipt_url": "','"')));  
